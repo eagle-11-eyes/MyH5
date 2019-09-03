@@ -12,14 +12,58 @@
         html{
             height: 100%;
         }
+        @keyframes myfirst {
+            0% {opacity: 0}
+            20% {opacity: 100}
+            40% {opacity: 100}
+            60% {opacity: 100}
+            80% {opacity: 100}
+            100% {opacity: 100}
+        }
+        @keyframes mysecond {
+            0% {opacity: 0}
+            20% {opacity: 0}
+            40% {opacity: 100}
+            60% {opacity: 100}
+            80% {opacity: 100}
+            100% {opacity: 100}
+        }
+        @keyframes mythird {
+            0% {opacity: 0}
+            20% {opacity: 0}
+            40% {opacity: 0}
+            60% {opacity: 100}
+            80% {opacity: 100}
+            100% {opacity: 100}
+        }
+        h1, h3, p{
+            text-align: center;
+            font-size: 30px;
+            width: 100%;
+            position: center;
+        }
+        #jing {
+            animation: myfirst 10s;
+        }
+        #li {
+            animation: mysecond 10s;
+        }
+        p {
+            animation: mythird 10s;
+        }
     </style>
 </head>
 <body>
-<h1>静夜思</h1>
-    <h3>李白</h3>
+<audio controls="controls" autoplay="autoplay" loop="1">
+    <source src="./wav/bandari-moon.mp3" />
+    <!--<source src="./wav/有一位神.mp3" />-->
+</audio>
+<h1 id="jing">静夜思</h1>
+    <h3 id="li">李白</h3>
     <p>床前明月光，</p>
     <p>疑是地上霜。</p>
     <p>举头望明月，</p>
     <p>低头思故乡。</p>
 </body>
 </html>
+
